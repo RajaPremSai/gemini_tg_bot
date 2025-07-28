@@ -26,13 +26,7 @@ This project is a Telegram bot that leverages Google's Gemini API to help users 
 
 2. **Configure your credentials:**
 
-   - Edit `config.yaml` and set your `tgToken` (Telegram Bot Token) and `geminiToken` (Google Gemini API Key):
-
-     ```yaml
-     tgToken: "<YOUR_TELEGRAM_BOT_TOKEN>"
-     geminiToken: "<YOUR_GEMINI_API_KEY>"
-     preamble: "E5: "
-     ```
+   - Edit your keys in the `main.go`
 
 3. **Install dependencies:**
 
@@ -77,14 +71,12 @@ Subject name and topics covered: Today I learned about machine learning concepts
 
 - [github.com/go-telegram-bot-api/telegram-bot-api](https://github.com/go-telegram-bot-api/telegram-bot-api) — Telegram Bot API for Go
 - [google.golang.org/genai](https://pkg.go.dev/google.golang.org/genai) — Google Gemini API Go SDK
-- [github.com/spf13/viper](https://github.com/spf13/viper) — Go configuration with YAML support
 
 ## Things I Learned & Experience
 
 - Integrating Google Gemini API with Go and handling its evolving SDK.
 - Building a Telegram bot that interacts with users and external APIs.
 - Parsing and structuring AI-generated responses for user-friendly output.
-- Managing configuration securely using YAML and Viper.
 - Handling Go module dependencies and troubleshooting version mismatches.
 - Error handling and logging for robust bot operation.
 
